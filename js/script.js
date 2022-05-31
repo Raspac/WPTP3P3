@@ -55,11 +55,11 @@ return newTache;
 }
 
 
-// var myNewTask = {
-// name : document.newTaskF.tache.value,
-// date : document.newTaskF.date.value,
-// categorie : document.newTaskF.categorie.value,
-// }
+var myNewTask = {
+    name : document.newTaskF.tache.value,
+    date : document.newTaskF.date.value,
+    categorie : document.newTaskF.categorie.value,
+}
 
   
 class Tache {
