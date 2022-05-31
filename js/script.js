@@ -48,3 +48,39 @@ function supprimer() {
         }
     
 }
+
+function tacheSaisie() {
+    const inputName = document.createElement('td')
+    const inputDate = document.createElement('td')
+    const inputCategorie = document.createElement('td')
+    inputName.textContent = document.newTaskF.tache.value
+    inputDate.textContent = document.newTaskF.date.value
+    inputCategorie.textContent = document.newTaskF.categorie.value
+  
+    const newTache = new Tache(inputName, inputDate, inputCategorie);
+  }
+  
+  var myNewTask = {
+    name : document.newTaskF.tache.value,
+    date : document.newTaskF.date.value,
+    categorie : document.newTaskF.categorie.value,
+  }
+  
+  class Tache {
+    constructor(nom, date, categorie) {
+      this.nom = nom;
+      this.date = date;
+      this.categorie = categorie;
+    }
+  }
+  
+  var myTasks = [];
+  
+  function pushTask(aTask){
+    myTasks.push(aTask);
+  }
+
+// pushTask(tacheSaisie())
+//     myTasks.forEach(element => {
+//     taskTd.textContent = element.;
+// });
